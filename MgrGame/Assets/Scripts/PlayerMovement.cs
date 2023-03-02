@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed;
     public float jumpForce;
 
-    public Transform player;
     float horizontalInput;
     float verticalInput;
     Vector3 moveDirection;

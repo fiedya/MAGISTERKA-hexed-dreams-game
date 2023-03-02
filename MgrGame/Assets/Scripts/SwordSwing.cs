@@ -24,15 +24,14 @@ public class SwordSwing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("ciach");
-            animator.SetTrigger(attack_swing_activator);
-        }
+        AttackOnClick();
     }
 
-    void OnClick()
+    void AttackOnClick()
     {
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetTrigger(attack_swing_activator);
+        }
     }
 }
